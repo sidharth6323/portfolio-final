@@ -11,7 +11,7 @@ body{
 }
 @font-face {
     font-family: paint;
-    src: url(/fonts/paint.ttf);
+    src: url(paint.ttf);
 }
 strong,b
 {
