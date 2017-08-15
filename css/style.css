@@ -78,6 +78,7 @@ strong,b
     width: 52%;
     height: 60%;
     margin: 5% 33%;
+    margin-bottom: 10%;
     background: url("../img/dp1.png");
     background-size: 100% 100%;
 }
@@ -94,21 +95,21 @@ strong,b
 .card .name
 {
   font-family: paint;
-  color: rgba(65, 132, 62, 0.7);
+  color: rgba(255, 51, 34, 0.7);
   line-height: 0.5em;
-  font-size: 5em;
+  font-size: 7em;
 }
 .card .name .first
 {
   position: absolute;
-  right: 31%;
+  right: 40%;
   top:-5%;
 }
 .card .name .last
 {
   position: absolute;
   right: 5%;
-  top:1%;
+  top:4%;
 }
 .card .text
 {
@@ -138,4 +139,89 @@ strong,b
   transform: rotate(180deg);
   font-weight: bolder;
   font-size: 1.5em;
+}
+.section
+{
+  width: 100%;
+  height: 100vh;
+}
+.section2 .card
+{
+  box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin:0% 23%;
+}
+
+.section2 .card .no-left
+{
+  left: 86.5%;
+    top: -29%;
+}
+.section2 .card .heading
+{
+  position: absolute;
+  left:5%;
+  top:-8%;
+  font-family: paint;
+  color: rgba(65, 132, 62, 0.7);
+  line-height: 0.5em;
+  font-size: 7em;
+}
+
+.section2 .card .expertise
+{
+  position: absolute;
+  width: 100%;
+  left:2%;
+  top:20%;
+}
+.section2 .card .expertise .skillscontainer
+{
+  display: flex;
+}
+.section2 .card .expertise .skillscontainer .allskills
+{
+  width:82%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section2 .card .expertise .skillscontainer .allskills .skill
+{
+  border: 2px solid #000;
+margin: 2%;
+padding: 1em;
+
+}
+.section2 .card .expertise .skillscontainer .allskills .skill img
+{
+  width: 4em;
+  height: 4em;
+  filter: grayscale(100%);
+}
+
+.section2 .card .expertise .activeskillcontainer .activeskill
+{
+  position: absolute;
+  right:-5%;
+  top:9%;
+  border:4px solid #000;
+  width:9em;
+  height: 12em;
+}
+.section2 .card .expertise .activeskillcontainer .activeskill img
+{
+  width: 7em;
+  height: 7em;
+  margin:25% 17%;
+}
+.section2 .card .expertise .activeskillcontainer .skillname
+{
+  border:4px solid #000;
+  position: absolute;
+  padding:1% 2%;
+  width: 25%;
+  top:90%;
+  font-weight: bolder;
+  font-size: 1em;
+  left:88%;
 }
