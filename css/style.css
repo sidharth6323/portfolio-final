@@ -18,6 +18,25 @@ strong,b
   font-weight: bolder;
   font-family: sans-serif;
 }
+.star {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+}
+.star:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
 .leftbar
 {
   height: 100%;
@@ -198,7 +217,15 @@ padding: 1em;
   height: 4em;
   filter: grayscale(100%);
 }
-
+.section2 .card .expertise .skillscontainer .allskills .skill.active img
+{
+  filter:none;
+}
+.section2 .card .starcontainer
+{
+  position: absolute;
+  top:40%;
+}
 .section2 .card .expertise .activeskillcontainer .activeskill
 {
   position: absolute;
@@ -267,6 +294,8 @@ padding: 1em;
   right: -15%;
   top:4%;
   margin:2%;
+  display: flex;
+  align-items: center;
   background: rgba(41,194,216,0.9);
   box-shadow: 0px 57px 34px -40px rgba(0, 0, 0, 0.15), 0px 3px 40px 2px rgba(0, 0, 0, 0.2);
 }
@@ -288,4 +317,50 @@ padding: 1em;
   top:65%;
   right: -12%;
   background: rgba(12,134,150,0.7);
+}
+.section3 .card .companies-container .company img
+{
+  width:5em;
+  height: 5em;
+  margin-right: 4%;
+}
+.section3 .card .companies-container .company h3
+{
+  margin: 0;
+  font-size: 1.2em;
+}
+.section3 .card .companies-container .company span
+{
+  font-size: 0.8em;
+}
+.section3 .card .companies-container .company2 img
+{
+  height: 3.7em;
+  float: right;
+  width:11em;
+}
+.section3 .card .companies-container .company4 img
+{
+  width:7.3em;
+  height: 3.4em!important;
+  margin-right: 4%;
+}
+.section3 .card .buttoncontainer
+{
+  border: 4px solid #000;
+  border-right: 3em solid #000;
+  display: inline-block;
+  padding: 1% 3%;
+  position: relative;
+  margin-top:57%;
+  margin-left: -10%;
+}
+.section3 .card .buttoncontainer i
+{
+  float: right;
+font-size: 1.8em;
+position: absolute;
+right: -31%;
+top: 8%;
+color: #fff;
 }
