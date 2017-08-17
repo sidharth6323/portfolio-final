@@ -13,7 +13,13 @@ $(document).ready(function() {
 					case 4:$('.projects').addClass("selected");break;
 					case 5:$('.hire').addClass("selected");break;
 				}
-
+				if(nextIndex>=2)
+				{
+					$('.arrowup').fadeIn(1000);
+				}
+				else {
+					$('.arrowup').fadeOut(1000);
+				}
 		}
 	});
 	$(window).scroll(function(){
