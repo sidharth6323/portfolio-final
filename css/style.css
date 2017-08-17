@@ -13,6 +13,10 @@ body{
     font-family: paint;
     src: url(paint.TTF);
 }
+@font-face {
+    font-family: icon;
+    src: url(../fonts/icon.ttf);
+}
 strong,b
 {
   font-weight: bolder;
@@ -45,11 +49,16 @@ strong,b
   //background: #fff;
   background: linear-gradient(90deg, #FFF 50%, #ecf3f3 50%);
 }
-
+.icon
+{
+  font-family: icon;
+  font-size: 5em;
+  margin: 2% 12%;
+}
 .leftbar ul{
   display: block;
   list-style-type: none;
-  margin-top: 100%;
+  margin-top: 60%;
 }
 .leftbar ul li
 {
@@ -575,4 +584,54 @@ color: #fff;
   color: #f7f7f7;
   font-size: 8em;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.54));
+}
+
+.section5 .card .heading
+{
+  position: absolute;
+  left:15%;
+  top:-10%;
+  font-family: paint;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 0.5em;
+  font-size: 8em;
+}
+.section5 .card
+{
+  box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  height: 30%;
+  margin:0% 33%;
+  z-index: -5;
+}
+.section5 .card .no-left
+{
+  left: -35%;
+  top: -5%;
+}
+.section5 .card .social
+{
+  position: absolute;
+  top: 48%;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.section5 .card .social span
+{
+  font-size: 0.97em;
+}
+.section5 .card .social i
+{
+  font-size: 2em;
+}
+.section5 .footer
+{
+
+  margin: 2% auto;
+  margin-top: 10%;
+  color: #c3cccc;
+  margin-left: 15%;
+  text-align: center;
 }
