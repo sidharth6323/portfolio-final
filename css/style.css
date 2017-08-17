@@ -22,6 +22,10 @@ strong,b
   font-weight: bolder;
   font-family: sans-serif;
 }
+a{
+  text-decoration: none;
+  color: #000;
+}
 .star {
 	width: 0;
 	height: 0;
@@ -47,6 +51,7 @@ strong,b
   width:17%;
   position: fixed;
   //background: #fff;
+  z-index: 1000;
   background: linear-gradient(90deg, #FFF 50%, #ecf3f3 50%);
 }
 .icon
@@ -72,10 +77,29 @@ strong,b
 .leftbar ul li.selected
 {
   border: 1px solid #000;
-  border-right: 15px solid rgba(65,132,62,0.7);
   background: #000;
   color: #fff;
   //color: #fff;
+}
+li.about.selected
+{
+  border-right: 15px solid rgba(34, 128, 255, 0.7)!important;
+}
+li.expertise.selected
+{
+  border-right: 15px solid rgba(65, 132, 62, 0.7)!important;
+}
+li.work.selected
+{
+  border-right: 15px solid rgba(255, 51, 34, 0.7)!important;
+}
+li.projects.selected
+{
+  border-right: 15px solid rgba(206, 200, 22, 0.7)!important;
+}
+li.hire.selected
+{
+  border-right: 15px solid rgba(0, 0, 0, 0.7)!important;
 }
 .leftbar ul li:hover
 {
@@ -96,6 +120,7 @@ strong,b
   padding-left: 8%;
   padding-right: 0;
   align-items: center;
+  z-index: -1000;
 }
 
 .card
