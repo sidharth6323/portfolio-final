@@ -46,7 +46,6 @@ $(document).ready(function() {
 			activeskill=0;
 		}
 		$(".starcontainer .starholder:nth-child(-n+"+stars+")").addClass("activestar");
-		//$(".starcontainer .star:nth-child(-n+"+stars+"):after").css("border-top","25px solid rgba(221,216,91,0.1)!important");
 	}
 	setInterval(changeskill,4000);
 });
