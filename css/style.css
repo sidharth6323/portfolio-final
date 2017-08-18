@@ -165,6 +165,7 @@ li.hire.selected
     width: 52%;
     height: 60%;
     margin: 5% 33%;
+    min-height: 481px;
     margin-bottom: 10%;
     background: url("../img/dp1.png");
     background-size: 100% 100%;
@@ -756,6 +757,7 @@ color: #fff;
 {
   position: absolute;
   left:15%;
+  min-height: 0px;
   top:-10%;
   font-family: paint;
   color: rgba(0, 0, 0, 0.7);
