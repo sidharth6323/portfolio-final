@@ -22,7 +22,31 @@ $(document).ready(function() {
 				}
 		}
 	});
-	$(window).scroll(function(){
-		console.log("scrolled");
-	})
+	activeskill = 1;
+	function changeskill(){
+		console.log("skill changed");
+		activeskill+=1;
+		$(".skill").removeClass("active");
+		$(".starholder").removeClass("activestar");
+		$('.skill'+activeskill).addClass("active");
+		$('.activeskill img').attr("src","img/skill"+activeskill+".png");
+		switch(activeskill)
+		{
+			case 1: $(".activeskillcontainer .skillname").html("Python (Advanced)");stars=5;break;
+			case 2: $(".activeskillcontainer .skillname").html("Django (Advanced)");stars=5;break;
+			case 3: $(".activeskillcontainer .skillname").html("NodeJs (Intermediate)");stars=4;break;
+			case 4: $(".activeskillcontainer .skillname").html("AngularJs (Advanced)");stars=5;break;
+			case 5: $(".activeskillcontainer .skillname").html("ReactJs (Intermediate)");stars=4;break;
+			case 6: $(".activeskillcontainer .skillname").html("ExpressJs (Intermediate)");stars=4;break;
+			case 7: $(".activeskillcontainer .skillname").html("MongoDB (Intermediate)");stars=4;break;
+			case 8: $(".activeskillcontainer .skillname").html("Jquery (Advanced)");stars=5;break;
+		}
+		if(activeskill==8)
+		{
+			activeskill=0;
+		}
+		$(".starcontainer .starholder:nth-child(-n+"+stars+")").addClass("activestar");
+		//$(".starcontainer .star:nth-child(-n+"+stars+"):after").css("border-top","25px solid rgba(221,216,91,0.1)!important");
+	}
+	setInterval(changeskill,4000);
 });

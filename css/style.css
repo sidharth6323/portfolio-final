@@ -51,23 +51,33 @@ a{
   color:#fff!important;
 }
 .star {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid red;
-	position: relative;
+  width: 0;
+    height: 0;
+    margin: 0 0.5em;
+    border-left: 13px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 25px solid rgba(221,216,91,1);
+    position: relative;
+}
+.starholder
+{
+  opacity: 0.5;
+}
+.activestar
+{
+  opacity: 1;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.15));
 }
 .star:after {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid red;
-	position: absolute;
-	content: "";
-	top: 30px;
-	left: -50px;
+  width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 25px solid rgba(221,216,91,1);
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -12.8px;
 }
 .leftbar
 {
@@ -281,15 +291,18 @@ padding: 1em;
   width: 4em;
   height: 4em;
   filter: grayscale(100%);
+  transition: all ease 0.8s;
 }
 .section2 .card .expertise .skillscontainer .allskills .skill.active img
 {
-  filter:none;
+  filter:grayscale(0%) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 .section2 .card .starcontainer
 {
   position: absolute;
-  top:40%;
+  top:113%;
+  left:25%;
+  display: flex;
 }
 .section2 .card .expertise .activeskillcontainer .activeskill
 {
@@ -297,14 +310,18 @@ padding: 1em;
   right:-5%;
   top:9%;
   border:4px solid #000;
+  background: #fff;
+  box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
   width:9em;
   height: 12em;
 }
 .section2 .card .expertise .activeskillcontainer .activeskill img
 {
   width: 7em;
+  transition: all ease 0.5s;
   height: 7em;
-  margin:25% 17%;
+  margin:25% 13%;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 .section2 .card .expertise .activeskillcontainer .skillname
 {
@@ -314,6 +331,7 @@ padding: 1em;
   width: 25%;
   top:90%;
   font-weight: bolder;
+  transition: all ease 0.5s;
   font-size: 1em;
   left:88%;
 }
@@ -498,7 +516,7 @@ color: #fff;
 height: 10em;
 position: absolute;
 top: -140%;
-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.14));
+filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.14));Ç
 }
 .section4 .card .project1 span
 {
@@ -714,7 +732,7 @@ color: #fff;
 
   margin: 2% auto;
   margin-top: 10%;
-  color: #c3cccc;
+  color: #919696;
   margin-left: 15%;
   text-align: center;
 }
