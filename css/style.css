@@ -757,7 +757,6 @@ color: #fff;
 {
   position: absolute;
   left:15%;
-  min-height: 0px;
   top:-10%;
   font-family: paint;
   color: rgba(0, 0, 0, 0.7);
@@ -770,6 +769,7 @@ color: #fff;
   background: #fff;
   height: 30%;
   margin:0% 33%;
+  min-height: 0px!important;
   z-index: 5;
 }
 .section5 .card .no-left
