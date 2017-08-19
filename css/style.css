@@ -19,6 +19,10 @@ body{
     font-family: icon;
     src: url(../fonts/icon.ttf);
 }
+.hide-desktop
+{
+  display: none;
+}
 strong,b
 {
   font-weight: bolder;
@@ -32,6 +36,10 @@ a{
   body
   {
     font-size: 85%;
+  }
+  .hide-desktop
+  {
+    display: block;
   }
   .hide-mobile
   {
@@ -107,6 +115,11 @@ a{
     margin-left: 5%;
     margin-bottom: 5%;
   }
+  .section4 .card .project1 p
+  {
+    margin-left: 9%;
+    margin-top: 9%;
+  }
   .section4 .card .project
   {
     position: static!important;
@@ -129,7 +142,8 @@ a{
   {
     position: static!important;
     font-size: 6em!important;
-    margin-left: 107%!important;
+    margin-left: 88%!important;
+    margin-top: 42%;
   }
   .section4 .card .project img
   {
