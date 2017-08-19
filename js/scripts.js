@@ -5,8 +5,9 @@ $(document).ready(function() {
     $('.card .background').each(function(){
       var $this = $(this),
           src = $(this).data('img');
-      $this.attr('src', src);
-			$this.css("filter","blur(0px)");
+      $this.one("load", function() {
+        $this.css("filter","blur(0px)");
+    }).attr('src', src);
       console.log(src);
     });
   });
