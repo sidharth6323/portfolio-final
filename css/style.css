@@ -121,6 +121,7 @@ a{
   {
     margin-left: 9%;
     margin-top: 9%;
+    font-weight: bolder;
   }
   .section4 .card .project
   {
@@ -154,6 +155,12 @@ a{
     width: 5em!important;
     height: 5em!important;
 
+  }
+  .section5 .card .social
+  {
+    top:14%!important;
+    flex-direction: column;
+    height: 78%;
   }
 }
 .arrowup
