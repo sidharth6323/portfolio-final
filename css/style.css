@@ -167,8 +167,15 @@ li.hire.selected
     margin: 7% 33%;
     min-height: 481px;
     margin-bottom: 10%;
-    background: url("../img/dp1.png");
-    background-size: 100% 100%;
+    //background: url("../img/dp1.png");
+    //background-size: 100% 100%;
+}
+.card .background
+{
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  transition: all ease 2s;
 }
 .card .no-left
 {

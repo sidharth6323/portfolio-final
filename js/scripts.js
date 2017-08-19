@@ -1,4 +1,16 @@
 $(document).ready(function() {
+
+	$(window).on('load', function(){
+		console.log("loaded");
+    $('.card .background').each(function(){
+      var $this = $(this),
+          src = $(this).data('img');
+      $this.attr('src', src);
+			$this.css("filter","blur(0px)");
+      console.log(src);
+    });
+  });
+
 	$('#fullpage').fullpage({
 		anchors: ['section1', 'section2', 'section3', 'section4'],
 		onLeave: function(index, nextIndex, direction){
