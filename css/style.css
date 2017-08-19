@@ -7,6 +7,7 @@ body{
   background-repeat: repeat-y;
     background-position: center;
     background-color: #ecf3f3;
+    font-size: 100%;
     font-family: 'Open Sans', sans-serif;
     transition: all ease-in-out 0.15s;
 }
@@ -26,6 +27,38 @@ strong,b
 a{
   text-decoration: none;
   color: #000;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body
+  {
+    font-size: 85%;
+  }
+  .section .card .background
+  {
+    display: none;
+  }
+  .section .card .text
+  {
+    top: 17%!important;
+  }
+  .section .card .heading,.section .card .name
+  {
+    display: none;
+  }
+  .leftbar ul
+  {
+    padding-left: 0;
+  }
+  .leftbar ul li
+  {
+    width: 1%!important;
+    border: 4px solid #f1f0f0!important;
+  }
+  .leftbar ul li.selected
+  {
+    color: #000!important;
+    background: #fff!important;
+  }
 }
 .arrowup
 {
