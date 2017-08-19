@@ -89,7 +89,10 @@ a{
   {
     margin-top: -21%!important;
   }
-
+  .section4 .card .project img
+  {
+    display: none;
+  }
 }
 .arrowup
 {
