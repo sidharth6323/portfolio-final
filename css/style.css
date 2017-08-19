@@ -45,6 +45,12 @@ a{
   {
     display: none;
   }
+  .section .card .no-left
+  {
+    top: -12%!important;
+    left: 11%!important;
+    color: #ddd!important;
+  }
   .leftbar ul
   {
     padding-left: 0;
