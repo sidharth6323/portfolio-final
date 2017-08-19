@@ -89,9 +89,55 @@ a{
   {
     margin-top: -21%!important;
   }
+  .section4 .card .projects-container
+  {
+    position: relative;
+    top: 9%;
+  }
+  .section4 .card .project1 .buttoncontainer
+  {
+    margin-top: 0.4%!important;
+    margin-left: 13%!important;
+    margin-bottom: 4%;
+  }
+  .section4 .card .project1 span
+  {
+    width: 39em!important;
+    font-size: 0.95em!important;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .section4 .card .project
+  {
+    position: static!important;
+    margin: 2% 0;
+    box-shadow: none!important;
+    width: 16em!important;
+    height: 5em!important;
+    display: flex;
+    align-items: center;
+  }
+  .section4 .card .project span
+  {
+    position: relative!important;
+    right: 17%!important;
+    top: 1%!important;
+    width: 5em!important;
+    display: inline-block;
+  }
+  .section4 .card .githubicon i
+  {
+    position: static!important;
+    font-size: 6em!important;
+    margin-left: 107%!important;
+  }
   .section4 .card .project img
   {
-    display: none;
+    //display: none;
+    position: static!important;
+    width: 5em!important;
+    height: 5em!important;
+
   }
 }
 .arrowup
