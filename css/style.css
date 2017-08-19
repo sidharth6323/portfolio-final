@@ -50,6 +50,8 @@ a{
     width: 65%!important;
     height: 60%!important;
     margin: 8% 25%!important;
+    box-shadow:  0px 5px 20px rgba(0, 0, 0, 0.1)!important  ;
+
   }
   .section .card .text
   {
